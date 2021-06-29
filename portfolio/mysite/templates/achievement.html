@@ -1,0 +1,22 @@
+<div class="project-section container">
+    <h1 class="heading center-align">ACHIEVEMENT'S</h1>
+    <div class="row">
+        {% for achievement, tags in achievements.items %}
+            <div class="col s12 m6 l4">
+                <div class="card hoverable grey lighten-3">
+                    <div class="container">
+                        <h4 class="title">{{ achievement.title }}</h4>
+                        <span class="chip blue lighten-3">{{ achievement.start_date }}</span>
+                        <span class="chip blue lighten-3">{{ achievement.end_date }}</span>
+                        <p>{{ achievement.excerpt }}</p>
+                        {% for tag in tags %}
+                            <span class="chip {{ tag.caption }}">{{ tag.caption }}</span>
+                        {% endfor %}
+                        <br>
+                        <!-- <a href="{{ project.link }}"><i class="material-icons">link</i></a> -->
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

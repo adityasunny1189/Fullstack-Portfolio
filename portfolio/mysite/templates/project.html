@@ -1,0 +1,25 @@
+<div class="project-section container">
+    <h1 class="heading center-align"><img class="project-img" src="https://media.giphy.com/media/1vZ6EVb8sUsCRprn5v/source.gif" alt=""></h1>
+    <div class="row">
+        {% for project, tags in projects.items %}
+            <div class="col s12 m6 l4">
+                <div class="card hoverable grey lighten-3">
+                    <div class="container">
+                        <div class="card-image">
+                            <img src="{{ project.image }}" alt="">
+                        </div>
+                        <h4 class="title">{{ project.title }}</h4>
+                        <span class="chip blue lighten-3">{{ project.start_date }}</span>
+                        <span class="chip blue lighten-3">{{ project.end_date }}</span>
+                        <p>{{ project.excerpt }}</p>
+                        {% for tag in tags %}
+                            <span class="chip {{ tag.caption }}">{{ tag.caption }}</span>
+                        {% endfor %}
+                        <br>
+                        <a href="{{ project.link }}"><i class="material-icons">link</i></a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

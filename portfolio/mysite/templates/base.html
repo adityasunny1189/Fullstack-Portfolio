@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            background-color: #bbdefb;
+        }
+        .footer-author-name {
+            font-family: 'Sacramento',cursive;
+            text-transform: none;
+            font-weight: 400;
+            font-size: 3em !important;
+        }
+        .heart {
+            color: red;
+        }
+        .footer-img {
+            margin: 0;
+            padding: 0;
+            height: 4rem;
+            width: 4rem;
+        }
+        .footer-ind-img {
+            margin: 0;
+            padding: 0;
+            width: 30rem;
+        }
+    </style>
+        {% block css-content %}
+        {% endblock %}
+</head>
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

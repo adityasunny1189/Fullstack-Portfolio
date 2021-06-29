@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Contact Me
+{% endblock %}
+
+{% block css-content %}
+    <link rel="stylesheet" href="{% static 'contact.css' %}">
+{% endblock %}
+
+{% block content %}
+    
+    <div class="form-content container z-depth-5">
+        <h4 class="heading">Contact Me</h4>
+        <form method="POST">
+            {% csrf_token %}
+            {% for field in form %}
+                <div class="form-control">
+                    {{ field.label }}
+                    {{ field }}
+                    {{ field.errors }}
+                </div>
+            {% endfor %}
+            <button class="btn waves-effect waves-light" type="submit">
+                Send<i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+
+{% endblock %}

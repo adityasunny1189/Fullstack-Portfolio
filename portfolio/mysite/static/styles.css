@@ -1,0 +1,53 @@
+.title {
+    font-weight: bolder;
+}
+.card {
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgb(0,0,0,0.26);
+}
+.Flask {
+    background-color: #b39ddb;
+}
+.JavaScript {
+    background-color: #fff59d;
+}
+.HTML {
+    background-color: #ffcc80;
+}
+.CSS {
+    background-color: #ef9a9a;
+}
+.AWS {
+    background-color: #cddc39;
+}
+.Heroku {
+    background-color: #ce93d8;
+}
+.React {
+    background-color: #81d4fa;
+}
+.Python {
+    background-color: #9fa8da;
+}
+.Django {
+    background-color: #a5d6a7;
+}
+
+.MySQL {
+    background-color: #f48fb1;
+}
+
+.Nodejs {
+    background-color: #69f0ae;
+}
+
+.SASS {
+    background-color: #ffab91;
+}
+
+.project-img {
+    margin: 0;
+    padding: 0;
+    width: 30rem;
+}

@@ -1,0 +1,32 @@
+.form-content {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem 2rem 0 2rem;
+    background-color: white;
+    height: 40rem;
+    width: 30rem;
+}
+
+.form-content h4 {
+    text-align: center;
+}
+
+.form-content textarea {
+    height: 13rem;
+}
+
+.form-content button {
+    align-items: center;
+    margin: 2rem 10rem 0 10rem;
+    background-color: #64b5f6;
+}
+
+.form-content button:hover
+.form-content button:active {
+    background-color: #42a5f5;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
